@@ -1,0 +1,41 @@
+.contact{
+    background-color: rgba(225,227,218 ,.5);
+    padding-left: 2rem;
+    padding-bottom: 20%;
+    font-family: 'Poppins', sans-serif;
+
+}
+.contact-hero-image{
+    width: 100%;
+    background-size: 20%;
+    background-image: linear-gradient(rgba(44, 62, 80, 0.5), rgba(44, 62, 80, 0.5)),                  
+    url("https://i.pinimg.com/564x/bb/70/72/bb70722b736f00cd79657817147807cd.jpg");
+    background-repeat: repeat-x;
+}
+.contact-hero-image img{
+    width: 20%;
+    filter:grayscale(50%)
+    }
+.sub-title{
+    font-size: 20px;
+    padding-bottom: 2%;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 768px) {
+    .contact-hero-image{
+        width: 100%;
+        background-size: 40%;
+    }
+    .contact-hero-image img{
+    width: 40%;
+    }
+    .cc{
+        padding-top: 12%;
+        padding-bottom: 20%;
+    }
+    .contact{
+        padding-bottom: 0%; 
+    }
+
+  }

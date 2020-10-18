@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React ,{useEffect} from 'react';
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import { Helmet } from 'react-helmet';
+import Cover from './components/cover/index';
+import Portifolio from './components/portifolio/index';
+import Contact from './components/contact/index'
 
 function App() {
+  useEffect(() => {
+    document.title = "Orla"
+ }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Helmet>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+      </Helmet>
+      <Router>
+        <Switch>
+          <Route exact path= '/'><Cover/></Route>
+          <Route exact path='/portifolio'><Portifolio/></Route>
+          <Route exact path='/contact'><Contact/></Route>
+        </Switch>
+      </Router>
+      
     </div>
   );
 }
