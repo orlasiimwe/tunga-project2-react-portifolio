@@ -38,7 +38,7 @@ function Portifolio() {
         <div className='getintouch text-center' style={{paddingTop:'5%' ,paddingBottom: '10%'}}>
           <p style={{fontSize:'18px', fontWeight:'bold'}}>Lets work together {''}<Link to ='/contact'><a className='contact-index'>Leave me a message</a></Link></p>
         </div>
-
+        <small id="emailHelp" class="form-text ">Disclaimer:Information provided is for the assignment and is in no way accurate.</small>
       </section>
     </>
   )
