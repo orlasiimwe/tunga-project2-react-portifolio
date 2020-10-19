@@ -22,15 +22,15 @@ function Portifolio() {
         </div>
 
         <div className='row'>
-          <div className='col-12 col-md-6 col-lg-6'>
+          <div className='col-12 col-md-6 col-lg-6 animate__animated animate__bounceInLeft'>
             <Profile/>
           </div>
-          <div className='col-12 col-md-6 col-lg-6'>
+          <div className='col-12 col-md-6 col-lg-6 animate__animated animate__bounceInRight animate__delay-1s'>
             <Skills/>
           </div>
         </div>
         <div className='row' style={{paddingTop:'5%'}}>
-          <div className='col-12 col-md-12 col-lg-12'>
+          <div className='col-12 col-md-12 col-lg-12 animate__animated animate__bounceInUp animate__delay-2s'>
             <Projects/>
           </div>
         </div>
